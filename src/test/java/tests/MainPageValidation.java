@@ -15,18 +15,18 @@ public class MainPageValidation extends TestBase{
         mainPageHelper = PageFactory.initElements(driver, MainPageHelper.class);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "UI")
     public void isSloganDisplayedTest() throws InterruptedException {
         Thread.sleep(5000);
         assert mainPageHelper.sloganContainText();
     }
 
-    @Test (priority = 2)
+    @Test (priority = 2, groups = "UI")
     public void isHomeButtonDisplayedTest(){
         mainPageHelper.isHomeButtonExist();
     }
 
-    @Test(priority = 1, groups = {"smoke", "searchResult"})
+    @Test(priority = 1, groups = {"functional", "searchResult"})
     public void isSearchResultDisplayedTest() throws InterruptedException {
         mainPageHelper.inputCityToFieldFrom(cityFrom);
         mainPageHelper.inputCityToFieldTo(cityTo);
@@ -55,6 +55,7 @@ public class MainPageValidation extends TestBase{
     public void clearCityByClickingOnStartPointIconTest(){
         mainPageHelper.inputCityToFieldFrom(cityFrom);
         mainPageHelper.clickOnStartPointIcon();
+        
     }
 
     @Test

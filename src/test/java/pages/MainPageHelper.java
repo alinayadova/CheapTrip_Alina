@@ -27,10 +27,10 @@ public class MainPageHelper extends PageBase{
     @FindBy(css = ".actions .mat-accent")
     WebElement clearButton;
 
-    @FindBy()
+    @FindBy(css = "[mattooltip= 'Remove StartPoint']")
     WebElement startPoint;
 
-    @FindBy()
+    @FindBy(css = "[mattooltip= 'Remove EndPoint']")
     WebElement endPoint;
 
 
