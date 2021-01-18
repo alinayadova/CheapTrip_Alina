@@ -33,6 +33,15 @@ public class MainPageHelper extends PageBase{
     @FindBy(css = "[mattooltip= 'Remove EndPoint']")
     WebElement endPoint;
 
+    @FindBy(css = "#mat-expansion-panel-header-2")
+    WebElement resultForm;
+
+    @FindBy(css = ".mat-form-field-flex")
+    WebElement toFieldClear;
+
+    @FindBy(css =".mat-form-field-flex")
+    WebElement fromFieldClear;
+
 
     public boolean sloganContainText() {
        return slogan.getText().contains("CHEAP TRIP. PAY LESS, VISIT MORE!");
@@ -73,5 +82,21 @@ public class MainPageHelper extends PageBase{
 
     public void clickOnEndPointIcon() {
         endPoint.click();
+    }
+
+    public void returnToHomePage() {
+        homeButton.click();
+    }
+
+    public boolean isResultDisplayed() {
+        return resultForm.isDisplayed();
+    }
+
+    public boolean isInputCityToFieldToClear() {
+      return toFieldClear.isDisplayed();
+    }
+
+    public boolean isInputCityToFieldFromClear() {
+        return fromFieldClear.isDisplayed();
     }
 }

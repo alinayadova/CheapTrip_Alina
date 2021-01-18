@@ -5,10 +5,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.MainPageHelper;
 
+
 public class MainPageValidation extends TestBase{
     MainPageHelper mainPageHelper;
     String cityFrom = "Tel-Aviv";
     String cityTo = "Sochi";
+
 
     @BeforeMethod
     public void unitTests(){
@@ -23,7 +25,7 @@ public class MainPageValidation extends TestBase{
 
     @Test (priority = 2, groups = "UI")
     public void isHomeButtonDisplayedTest(){
-        mainPageHelper.isHomeButtonExist();
+      assert  mainPageHelper.isHomeButtonExist();
     }
 
     @Test(priority = 1, groups = {"functional", "searchResult"})
@@ -31,37 +33,50 @@ public class MainPageValidation extends TestBase{
         mainPageHelper.inputCityToFieldFrom(cityFrom);
         mainPageHelper.inputCityToFieldTo(cityTo);
         mainPageHelper.clickOnLetsGoButton();
-        //assert mainPageHelper.isResultDisplayed();
+        mainPageHelper.returnToHomePage();
+       // assert mainPageHelper.isResultDisplayed();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "UI")
     public void isLetsGoButtonDisplayed(){
-        mainPageHelper.isLetsGoButtonExist();
+        assert mainPageHelper.isLetsGoButtonExist();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "UI")
     public void isClearButtonDisplayed(){
-        mainPageHelper.isClearButtonExist();
+        assert mainPageHelper.isClearButtonExist();
     }
 
-    @Test
+    @Test(priority = 1, groups = "functional")
     public void isSearchResultDeletedTest() throws InterruptedException {
         mainPageHelper.inputCityToFieldFrom(cityFrom);
         mainPageHelper.inputCityToFieldTo(cityTo);
         mainPageHelper.clickOnClearButton();
+        assert mainPageHelper.isInputCityToFieldToClear();
+        assert mainPageHelper.isInputCityToFieldFromClear();
     }
 
-    @Test
+    @Test(priority = 1,groups = "functional")
     public void clearCityByClickingOnStartPointIconTest(){
         mainPageHelper.inputCityToFieldFrom(cityFrom);
         mainPageHelper.clickOnStartPointIcon();
-        
+        assert mainPageHelper.isInputCityToFieldToClear();
     }
 
-    @Test
+    @Test(priority = 1, groups = "functional")
     public void clearCityByClickingOnEndPointIconTest() throws InterruptedException {
         mainPageHelper.inputCityToFieldTo(cityTo);
         mainPageHelper.clickOnEndPointIcon();
+        assert mainPageHelper.isInputCityToFieldFromClear();
+    }
+
+    @Test(priority = 1, groups = {"functional", "searchResult"}, dataProvider = "validCities", dataProviderClass = DataProviders.class)
+    public void isSearchResultDisplayedFromDataProviderTest(String cityFromFromDataProvider, String cityToFromDataProvider) throws InterruptedException {
+        mainPageHelper.inputCityToFieldFrom(cityFromFromDataProvider);
+        mainPageHelper.inputCityToFieldTo(cityToFromDataProvider);
+        mainPageHelper.clickOnLetsGoButton();
+        mainPageHelper.returnToHomePage();
+        //assert mainPageHelper.isResultDisplayed();
     }
 
 
