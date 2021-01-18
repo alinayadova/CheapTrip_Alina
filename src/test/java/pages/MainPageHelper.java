@@ -60,8 +60,9 @@ public class MainPageHelper extends PageBase{
         Thread.sleep(5000);
     }
 
-    public void clickOnLetsGoButton() {
+    public void clickOnLetsGoButton() throws InterruptedException {
         letsGoButton.click();
+        Thread.sleep(5000);
     }
 
     public boolean isLetsGoButtonExist() {
