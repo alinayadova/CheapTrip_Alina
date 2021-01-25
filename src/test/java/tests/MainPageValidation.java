@@ -28,15 +28,6 @@ public class MainPageValidation extends TestBase{
       assert  mainPageHelper.isHomeButtonExist();
     }
 
-    @Test(priority = 1, groups = {"functional", "searchResult"})
-    public void isSearchResultDisplayedTest() throws InterruptedException {
-        mainPageHelper.inputCityToFieldFrom(cityFrom);
-        mainPageHelper.inputCityToFieldTo(cityTo);
-        mainPageHelper.clickOnLetsGoButton();
-        mainPageHelper.returnToHomePage();
-       // assert mainPageHelper.isResultDisplayed();
-    }
-
     @Test(priority = 2, groups = "UI")
     public void isLetsGoButtonDisplayed(){
         assert mainPageHelper.isLetsGoButtonExist();
@@ -48,7 +39,7 @@ public class MainPageValidation extends TestBase{
     }
 
     @Test(priority = 1, groups = "functional")
-    public void isSearchResultDeletedTest() throws InterruptedException {
+    public void isSearchResultDeletedTest(){
         mainPageHelper.inputCityToFieldFrom(cityFrom);
         mainPageHelper.inputCityToFieldTo(cityTo);
         mainPageHelper.clickOnClearButton();
@@ -64,23 +55,17 @@ public class MainPageValidation extends TestBase{
     }
 
     @Test(priority = 1, groups = "functional")
-    public void clearCityByClickingOnEndPointIconTest() throws InterruptedException {
+    public void clearCityByClickingOnEndPointIconTest(){
         mainPageHelper.inputCityToFieldTo(cityTo);
         mainPageHelper.clickOnEndPointIcon();
         assert mainPageHelper.isInputCityToFieldFromClear();
     }
 
-    @Test(priority = 1, groups = {"functional", "searchResult"}, dataProvider = "validCities", dataProviderClass = DataProviders.class)
-    public void isSearchResultDisplayedFromDataProviderTest(String cityFromFromDataProvider, String cityToFromDataProvider) throws InterruptedException {
-        mainPageHelper.inputCityToFieldFrom(cityFromFromDataProvider);
-        mainPageHelper.inputCityToFieldTo(cityToFromDataProvider);
+    @Test(priority = 2, groups = "functional")
+    public void checkTheTotalCostOfRouteTest(){
+        mainPageHelper.inputCityToFieldFrom(cityFrom);
+        mainPageHelper.inputCityToFieldTo(cityTo);
         mainPageHelper.clickOnLetsGoButton();
-        mainPageHelper.returnToHomePage();
-        //assert mainPageHelper.isResultDisplayed();
+        mainPageHelper.checkTotalCostOfTheRoute();
     }
-
-
-
-
-
 }

@@ -1,0 +1,4 @@
+19:16:47.170 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTest
+19:16:50.391 [main] INFO  tests.TestBase - Test result: PASSED
+19:16:50.391 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTest
+19:16:50.392 [main] INFO  tests.TestBase - ======================================================

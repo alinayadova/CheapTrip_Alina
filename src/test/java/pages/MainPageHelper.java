@@ -1,8 +1,12 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainPageHelper extends PageBase{
     public MainPageHelper(WebDriver driver) {
@@ -33,7 +37,7 @@ public class MainPageHelper extends PageBase{
     @FindBy(css = "[mattooltip= 'Remove EndPoint']")
     WebElement endPoint;
 
-    @FindBy(css = "#mat-expansion-panel-header-2")
+    @FindBy(className = "aside")
     WebElement resultForm;
 
     @FindBy(css = ".mat-form-field-flex")
@@ -41,6 +45,23 @@ public class MainPageHelper extends PageBase{
 
     @FindBy(css =".mat-form-field-flex")
     WebElement fromFieldClear;
+
+    @FindBy(id = "mat-autocomplete-0")
+    WebElement submitCityFromDropDownList;
+
+    @FindBy(id = "mat-autocomplete-1")
+    WebElement submitCityToDropDownList;
+
+    @FindBy(css = ".mat-expansion-indicator")
+    WebElement openDropList;
+
+    @FindBy(tagName = "mat-chip")
+    List<WebElement> totalCost;
+
+    @FindBy(css = ".details")
+    List<WebElement> routesList;
+
+
 
 
     public boolean sloganContainText() {
@@ -52,17 +73,19 @@ public class MainPageHelper extends PageBase{
     }
 
     public void inputCityToFieldFrom(String city){
-        fromField.sendKeys(city);
+       fromField.sendKeys(city);
+       waitUntilElementVisible(submitCityFromDropDownList, 10);
+       submitCityFromDropDownList.click();
     }
 
-    public void inputCityToFieldTo(String city) throws InterruptedException {
+    public void inputCityToFieldTo(String city){
         toField.sendKeys(city);
-        Thread.sleep(5000);
+        waitUntilElementVisible(submitCityToDropDownList, 10);
+        submitCityToDropDownList.click();
     }
 
-    public void clickOnLetsGoButton() throws InterruptedException {
+    public void clickOnLetsGoButton(){
         letsGoButton.click();
-        Thread.sleep(5000);
     }
 
     public boolean isLetsGoButtonExist() {
@@ -90,6 +113,7 @@ public class MainPageHelper extends PageBase{
     }
 
     public boolean isResultDisplayed() {
+        waitUntilElementVisible(resultForm, 20);
         return resultForm.isDisplayed();
     }
 
@@ -99,5 +123,21 @@ public class MainPageHelper extends PageBase{
 
     public boolean isInputCityToFieldFromClear() {
         return fromFieldClear.isDisplayed();
+    }
+
+    public void checkTotalCostOfTheRoute() {
+        waitUntilElementVisible(resultForm, 10);
+        openDropList.click();
+        System.out.println(Double.parseDouble(totalCost.get(0).getText().substring(1)));
+        System.out.println(routesList.get(0).findElement(By.xpath("//span[contains(text(),'€')]")).getText().substring(1));
+
+
+
+
+
+
+
+
+
     }
 }
