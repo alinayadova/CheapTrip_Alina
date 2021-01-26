@@ -40,7 +40,6 @@ public class SearchTest extends TestBase{
         mainPageHelper.inputCityToFieldFrom(cityFromFromDataProvider);
         mainPageHelper.inputCityToFieldTo(cityToFromDataProvider);
         mainPageHelper.clickOnLetsGoButton();
-        mainPageHelper.returnToHomePage();
 
         Assert.assertTrue(mainPageHelper.isResultDisplayed(),"Search result for cities:" + cityFrom + ", " +cityTo + " cities don't exist in dataBase!");
     }

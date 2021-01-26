@@ -1,0 +1,17 @@
+17:35:10.903 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:35:10.911 [main] INFO  tests.TestBase -  --> With data: [Athens, Aalborg]
+17:35:13.271 [main] INFO  tests.TestBase - Test result: PASSED
+17:35:13.271 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:35:13.271 [main] INFO  tests.TestBase - ======================================================
+17:35:18.996 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:35:18.996 [main] INFO  tests.TestBase -  --> With data: [Alicante, Aarhus]
+17:35:52.696 [main] ERROR tests.TestBase - Test result: FAILED
+17:35:52.705 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:35:52.705 [main] INFO  tests.TestBase - ======================================================
+17:35:57.711 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:35:57.711 [main] INFO  tests.TestBase -  --> With data: [Almeria, Alanya]
+17:36:30.725 [main] ERROR tests.TestBase - Test result: FAILED
+17:36:30.725 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:36:30.725 [main] INFO  tests.TestBase - ======================================================
+17:36:35.504 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:36:35.504 [main] INFO  tests.TestBase -  --> With data: [Aalborg, Alicante]

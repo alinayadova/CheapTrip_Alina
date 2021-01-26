@@ -113,7 +113,7 @@ public class MainPageHelper extends PageBase{
     }
 
     public boolean isResultDisplayed() {
-        waitUntilElementVisible(resultForm, 20);
+        waitUntilElementVisible(resultForm, 10);
         return resultForm.isDisplayed();
     }
 

@@ -27,7 +27,7 @@ public class DataProviders {
     public Iterator<Object[]>validCitiesUsingCSV() throws IOException {
         List<Object[]> list  = new ArrayList<>();
         BufferedReader reader = new BufferedReader
-                (new FileReader(new File("src/test/resources/cities_list.csv")));
+                (new FileReader(new File("src/test/resources/Cities.csv")));
         String line =  reader.readLine();
         while (line!=null){
             list.add(line.split(","));

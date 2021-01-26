@@ -1,0 +1,55 @@
+17:37:41.884 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:37:41.892 [main] INFO  tests.TestBase -  --> With data: [Athens, Aalborg]
+17:37:45.106 [main] INFO  tests.TestBase - Test result: PASSED
+17:37:45.106 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:37:45.106 [main] INFO  tests.TestBase - ======================================================
+17:37:50.290 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:37:50.290 [main] INFO  tests.TestBase -  --> With data: [Alicante, Aarhus]
+17:37:53.881 [main] INFO  tests.TestBase - Test result: PASSED
+17:37:53.881 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:37:53.881 [main] INFO  tests.TestBase - ======================================================
+17:38:15.711 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:15.711 [main] INFO  tests.TestBase -  --> With data: [Almeria, Alanya]
+17:38:18.717 [main] INFO  tests.TestBase - Test result: PASSED
+17:38:18.718 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:18.718 [main] INFO  tests.TestBase - ======================================================
+17:38:23.494 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:23.494 [main] INFO  tests.TestBase -  --> With data: [Aalborg, Alicante]
+17:38:27.152 [main] INFO  tests.TestBase - Test result: PASSED
+17:38:27.152 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:27.152 [main] INFO  tests.TestBase - ======================================================
+17:38:32.454 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:32.454 [main] INFO  tests.TestBase -  --> With data: [Aarhus, Almeria]
+17:38:35.875 [main] INFO  tests.TestBase - Test result: PASSED
+17:38:35.883 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:35.883 [main] INFO  tests.TestBase - ======================================================
+17:38:40.921 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:40.921 [main] INFO  tests.TestBase -  --> With data: [Ancona, Amsterdam]
+17:38:44.671 [main] INFO  tests.TestBase - Test result: PASSED
+17:38:44.671 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:44.671 [main] INFO  tests.TestBase - ======================================================
+17:38:50.103 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:50.103 [main] INFO  tests.TestBase -  --> With data: [Aosta, Ancona]
+17:38:53.469 [main] INFO  tests.TestBase - Test result: PASSED
+17:38:53.469 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:53.469 [main] INFO  tests.TestBase - ======================================================
+17:38:58.234 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:38:58.234 [main] INFO  tests.TestBase -  --> With data: [Amsterdam, Ankara]
+17:39:01.252 [main] INFO  tests.TestBase - Test result: PASSED
+17:39:01.252 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:39:01.252 [main] INFO  tests.TestBase - ======================================================
+17:39:06.228 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:39:06.228 [main] INFO  tests.TestBase -  --> With data: [Alanya, Antalya]
+17:39:09.504 [main] INFO  tests.TestBase - Test result: PASSED
+17:39:09.504 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:39:09.504 [main] INFO  tests.TestBase - ======================================================
+17:39:14.504 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:39:14.504 [main] INFO  tests.TestBase -  --> With data: [Ankara, Aosta]
+17:39:18.173 [main] INFO  tests.TestBase - Test result: PASSED
+17:39:18.181 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:39:18.181 [main] INFO  tests.TestBase - ======================================================
+17:39:23.897 [main] INFO  tests.TestBase - Start test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:39:23.897 [main] INFO  tests.TestBase -  --> With data: [Antalya, Athens]
+17:39:26.897 [main] INFO  tests.TestBase - Test result: PASSED
+17:39:26.897 [main] INFO  tests.TestBase - Stop test: isSearchResultDisplayedTestFromDataProviderUsingCSVTest
+17:39:26.897 [main] INFO  tests.TestBase - ======================================================
